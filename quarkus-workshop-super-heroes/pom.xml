@@ -9,6 +9,7 @@
     <name>Quarkus Workshop :: Super-Heroes :: R00T</name>
     <properties>
         <assembly-plugin.version>3.3.0</assembly-plugin.version>
+        <quarkus.version>3.0.3.Final</quarkus.version>
     </properties>
     <modules>
         <module>super-heroes/ui-super-heroes</module>
@@ -47,7 +48,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
-                <version>3.0.3.Final</version>
+                <version>${quarkus.version}</version>
                 <executions>
                     <execution>
                         <id>get-wrapper</id>

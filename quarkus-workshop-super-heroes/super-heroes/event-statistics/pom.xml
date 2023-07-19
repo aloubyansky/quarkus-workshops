@@ -80,6 +80,13 @@
         <version>${quarkus.platform.version}</version>
         <extensions>true</extensions>
         <executions>
+                    <execution>
+                        <id>track-prod-config-changes</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>track-config-changes</goal>
+                        </goals>
+                    </execution>
           <execution>
             <goals>
               <goal>build</goal>
